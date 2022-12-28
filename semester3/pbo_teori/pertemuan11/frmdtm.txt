@@ -1,0 +1,14 @@
+SELECT transaksi.*, admin.*, menu.*, customer.namacustomer FROM transaksi LEFT JOIN admin ON transaksi.idadmin = admin.idadmin LEFT JOIN menu ON transaksi.idmenu = menu.idmenu 
+               LEFT JOIN customer ON transaksi.idcustomer = customer.idcustomer WHERE idtransaksi = 1
+
+SELECT transaksimenu.idtransaksimenu, transaksimenu.idmenu, transaksi.idtransaksi, menu.idmenu, menu.nama FROM transaksimenu LEFT JOIN menu ON transaksimenu.idmenu=menu.idmenu 
+LEFT JOIN transaksi ON transaksimenu.idtransaksi = transaksi.idtransaksi WHERE idtransaksimenu = 3
+
+SELECT transaksimenu.*, transaksimenu.*, transaksi.*, menu.*, menu.nama FROM transaksimenu LEFT JOIN menu ON transaksimenu.idmenu=menu.idmenu 
+LEFT JOIN transaksi ON transaksimenu.idtransaksi = transaksi.idtransaksi WHERE idtransaksimenu = 3
+
+btnSimpan
+//        String customer = txtCustomer.getText();
+//        String tanggalTransaksi = txtTanggalTransaksi.getText();
+//        String admin = txtAdmin.getText();
+        

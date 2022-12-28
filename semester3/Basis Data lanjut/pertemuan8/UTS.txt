@@ -1,0 +1,80 @@
+-- Active: 1663129874887@@127.0.0.1@3306@penjualan
+
+-- Insert
+INSERT INTO barang VALUES 
+(7,'Jaket', 125000 ,8, 1),
+(8,'Tas', 120000, 9 , 2),
+(9,'Ikat Pinggang', 45000, 7 , 2),
+(10,'Kaos Kaki', 20000, 15 , 1);
+
+INSERT INTO pembayaran 
+VALUES (1,NOW(),250000,1),
+(2,NOW(),90000,4),
+(3,NOW(),18000,5);
+
+-- DELETE
+DELETE FROM barang
+WHERE nama_barang = 'Kaos Kaki';
+
+-- UPDATE
+UPDATE barang 
+SET harga=42000
+WHERE nama_barang='Ikat Pinggang';
+
+
+-- Join
+SELECT barang.nama_barang, pembeli.nama_pembeli, transaksi.tanggal, transaksi.keterangan FROM transaksi 
+JOIN pembeli ON transaksi.id_pembeli = pembeli.id_pembeli 
+JOIN barang ON transaksi.id_barang = barang.id_barang 
+WHERE transaksi.keterangan="Lunas";
+
+-- Aggregate
+SELECT AVG(harga) AS "RATA-RATA" FROM barang;
+SELECT COUNT(*) AS 'jumlah_data'
+FROM barang;
+SELECT SUM(total_bayar) AS 'Total Penghasilan'
+FROM pembayaran;
+
+SELECT MAX(total_bayar) AS 'Total Penghasilan'
+FROM pembayaran;
+SELECT MIN(total_bayar) AS 'Total Penghasilan'
+FROM pembayaran;
+
+-- GROUP BY
+SELECT nama_barang, stok
+FROM barang WHERE id_supplier=1 GROUP BY nama_barang;
+-- ORDER BY
+SELECT * FROM barang ORDER BY nama_barang ASC;
+SELECT * FROM barang ORDER BY harga DSC;
+-- view
+CREATE VIEW Keterangan_Lunas AS SELECT barang.nama_barang, pembeli.nama_pembeli,transaksi.tanggal,transaksi.keterangan 
+FROM transaksi JOIN pembeli ON transaksi.id_pembeli = pembeli.id_pembeli JOIN barang on transaksi.id_barang = barang.id_barang 
+WHERE transaksi.keterangan = "Lunas";
+
+-- uninon
+SELECT nama_barang, supplier.nama_supplier
+FROM barang 
+JOIN supplier ON barang.id_supplier = supplier.id_supplier
+WHERE barang.id_supplier=supplier.id_supplier
+UNION
+SELECT nama_supplier, barang.nama_barang
+FROM supplier 
+JOIN barang ON barang.id_supplier = supplier.id_supplier
+WHERE barang.id_supplier=supplier.id_supplier;
+
+-- SUB QUERY
+SELECT id_transaksi, tgl_bayar, total_bayar
+FROM pembayaran
+WHERE total_bayar = (SELECT MAX(total_bayar)
+FROM pembayaran);
+SELECT id_transaksi, tgl_bayar, total_bayar
+FROM pembayaran
+WHERE total_bayar = (SELECT MIN(total_bayar)
+FROM pembayaran);
+
+-- PROCEDURE
+CREATE TRIGGER beli
+AFTER INSERT ON beli
+FOR EACH ROW 
+UPDATE barang set stok = stok + NEW.stok 
+WHERE id_barang = new.id_barang;

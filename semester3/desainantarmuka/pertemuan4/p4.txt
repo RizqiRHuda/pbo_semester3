@@ -1,0 +1,21 @@
+Dialog : pertukaran instruksi 
+
+8 Golden rules dialog design
+
+1.pembuatan web harus konsistensi, jika kita menulis hapus
+dengan delete maka seterusnya harus  dengan tulisan delete
+
+2. shortcut hemat waktu, tidak sampai menghilangakn kesabaran
+
+
+
+Penggunaan Bahasa pada herror handling
+1. hindari bahasa yg ilegal
+2. bahasa mudah dipahami
+
+short-term memori
+contoh memisah digit nomor e.g 0853-3434-4962
+
+command language / bahasa perintah
+diperlukan dalam sistem operasi DOS dan UNIX
+

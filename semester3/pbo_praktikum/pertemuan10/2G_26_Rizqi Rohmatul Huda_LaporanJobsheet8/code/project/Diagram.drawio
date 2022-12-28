@@ -1,0 +1,81 @@
+<mxfile host="65bd71144e">
+    <diagram id="TVDzuod77OGJzW5KqXro" name="Page-1">
+        <mxGraphModel dx="1649" dy="938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Mesin" style="swimlane;fontStyle=3" parent="1" vertex="1">
+                    <mxGeometry x="440" y="40" width="390" height="310" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="+ Mesin(jenis : String, nama : String, no_seri : int, power : double, cc : int, kecepatan : int, massa : int)&lt;br&gt;&lt;i&gt;+ startMachine() : String&lt;/i&gt;&lt;br&gt;&lt;i&gt;+ produceEnergy() : double&lt;/i&gt;&lt;br&gt;+ getInfo() : String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry x="15" y="150" width="355" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;div&gt;&lt;div&gt;+ jenis : String&lt;/div&gt;&lt;div&gt;+ nama : String&lt;/div&gt;&lt;div&gt;+ no_seri : int&lt;/div&gt;&lt;div&gt;+ power&amp;nbsp; : double&lt;/div&gt;&lt;div&gt;+ cc : int&lt;/div&gt;&lt;div&gt;+ kecepatan : int&lt;/div&gt;&lt;div&gt;+ massa : int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry x="15" y="33" width="185" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="endArrow=none;html=1;" parent="2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="143" as="sourcePoint"/>
+                        <mxPoint x="390" y="143" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="Mesin2Silinder" style="swimlane;fontStyle=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="480" width="310" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6" vertex="1">
+                    <mxGeometry x="10" y="30" width="140" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="+ gear : int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6" vertex="1">
+                    <mxGeometry x="20" y="30" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="endArrow=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" parent="6" edge="1" target="6">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="70" as="sourcePoint"/>
+                        <mxPoint x="260" y="70" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="19" value="+ Mesin2Silinder(gear : int, jenis : String, nama : String, no_seri : int, power : double, cc : int, kecepatan : int, massa : int)&lt;br&gt;+ startMachine() : String&lt;br&gt;+ produceEnergy() : double&lt;br&gt;+ getInfo() : String&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6" vertex="1">
+                    <mxGeometry x="20" y="80" width="280" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Generator" style="swimlane;fontStyle=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="480" width="310" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="11" vertex="1">
+                    <mxGeometry x="10" y="30" width="140" height="65" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="+ place : String&lt;br&gt;+ eAir : int;&lt;br&gt;+ h : int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="11" vertex="1">
+                    <mxGeometry x="20" y="30" width="170" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="endArrow=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="79" as="sourcePoint"/>
+                        <mxPoint x="310" y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="+ Generator(place : String, eAir : int, h : int, gear : int, jenis : String, nama : String, no_seri : int, power : double, cc : int, kecepatan : int, massa : int)&lt;br&gt;+ startMachine() : String&lt;br&gt;+ produceEnergy() : double&lt;br&gt;+ getInfo() : String" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="11" vertex="1">
+                    <mxGeometry x="10" y="95" width="290" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="480" as="sourcePoint"/>
+                        <mxPoint x="600" y="350" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="240" y="440"/>
+                            <mxPoint x="600" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="" style="endArrow=classic;html=1;exitX=0.548;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="11">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="630" y="540" as="sourcePoint"/>
+                        <mxPoint x="670" y="350" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1010" y="440"/>
+                            <mxPoint x="670" y="440"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

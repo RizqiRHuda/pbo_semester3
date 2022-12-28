@@ -1,0 +1,29 @@
+Metode machine learning berbasis umpan balik di mana agen belajar berperilaku 
+di lingkungan dengan melakukan tindakan dan melihat hasil tindakan. 
+
+Dalam reinforcement learning,
+
+Reinforcement learning memecahkan jenis masalah tertentu di mana pengambilan keputusan berurutan,
+dan tujuannya adalah jangka panjang, seperti bermain game, robotika, dll.
+
+1. Agen pada reinforcement learning berinteraksi dengan lingkungan dan mengeksplorasinya sendiri.
+2.  Agen secara otomatis menggunakan umpan balik tanpa data berlabel,
+tidak seperti metode pembelajaran supervised learning. Karena tidak ada data berlabel, 
+maka agen terikat untuk belajar dari pengalamannya saja.
+3. Untuk setiap tindakan baik, agen mendapat umpan balik positif, dan 
+untuk setiap tindakan buruk, agen mendapat umpan balik negatif atau penalti.
+
+
+Tujuan utama seorang agen dalam reinforcement learning adalah untuk meningkatkan kinerja dengan 
+mendapatkan imbalan positif yang maksimal.
+
+
+
+1. Misalkan ada agen AI yang hadir dalam lingkungan labirin, dan tujuannya adalah untuk menemukan berlian.
+2. Agen berinteraksi dengan lingkungan dengan melakukan beberapa tindakan, dan berdasarkan tindakan tersebut, 
+keadaan agen berubah, dan juga menerima imbalan atau penalti sebagai umpan balik.
+3. Agen terus melakukan tiga hal ini (mengambil tindakan, mengubah keadaan/tetap dalam keadaan yang sama,
+ dan mendapatkan umpan balik), dan dengan melakukan tindakan ini, ia belajar dan menjelajahi lingkungan.
+4. Agen belajar bahwa tindakan apa yang mengarah pada umpan balik atau imbalan positif dan tindakan apa yang mengarah 
+pada hukuman umpan balik negatif. Sebagai imbalan positif, agen mendapat poin positif, dan sebagai penalti, agen mendapat poin negatif.
+

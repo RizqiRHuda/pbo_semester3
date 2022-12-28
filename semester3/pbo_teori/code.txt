@@ -1,0 +1,16 @@
+1 public interface Relation {
+ 2 public boolean isGreater( int a, int b);
+ 3 public boolean isLess( int a, int b); 
+4 public boolean isEqual( int a, int b); 5 }
+
+
+1 abstract class GraphicObject { 
+2 int x, y; 
+3 void moveTo(int newX, int newY){ ..... }
+4 abstract void draw();
+5 abstract void resize();
+6 }
+
+public class Tes{ 
+public static void main (String args[])
+{ int a=9;int b=4;int c=a/b; }} 

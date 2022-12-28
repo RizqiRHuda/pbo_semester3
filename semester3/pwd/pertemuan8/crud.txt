@@ -1,0 +1,61 @@
+Membuat Tabel
+
+Supplier
+create table supplier(
+id_supplier int not null auto_increment primary key,
+nama_supplier varchar(30) not null,
+no_telp char(13),
+alamat varchar(100)
+);
+
+Pembeli
+create table pembeli (
+id_pembeli int not null auto_increment primary key,
+nama_pembeli varchar(30) not null,
+jk char(1),
+no_telp char(14),
+alamat varchar(50)
+);
+Barang
+create table barang (
+id_barang int not null auto_increment primary key,
+nama_barang varchar(20) not null,
+harga int,
+stok int,
+id_supplier int,
+CONSTRAINT id_supplier FOREIGN KEY (`id_supplier`) REFERENCES `supplier`
+ (`id_supplier`)
+);
+
+Transaksi
+create table transaksi (
+id_transaksi int not null auto_increment primary key,
+id_barang int,
+id_pembeli int,
+tanggal date,
+keterangan varchar(100),
+CONSTRAINT id_barang FOREIGN KEY (`id_barang`) REFERENCES `barang` 
+(`id_barang`),
+CONSTRAINT id_pembeli FOREIGN KEY (`id_pembeli`) REFERENCES `pembeli` (`id_pembeli`)
+);
+Pembayaran
+create table pembeli (
+id_pembayaran int not null auto_increment primary key,
+tgl_bayar date,
+total_bayar int,
+id_transaksi int,
+CONSTRAINT id_transaksi FOREIGN KEY (`id_transaksi`) REFERENCES `transaksi` (`id_transaksi`)
+);
+
+
+koneksi
+
+<?php
+$hostname="localhost";
+$username="root";
+$password=" ";
+$database="db_kampus";
+$koneksi= mysql_connect($hostname,$username,$password) or die
+ ("koneksi ke MYSQL gagal");
+mysql_select_db($database,$koneksi) or die ("koneksi ke database gagal");
+?>

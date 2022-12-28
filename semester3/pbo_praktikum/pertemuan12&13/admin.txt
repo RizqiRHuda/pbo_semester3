@@ -1,0 +1,47 @@
+Fungsi Combobox Nama Barang
+String NamaBarang=(String)nama_barang.getSelectedItem();
+switch (NamaBarang){
+case "Televisi":
+harga_barang.setText("3000000");
+break;
+case "Komputer":
+harga_barang.setText("4000000");
+break;
+case "Laptop":
+harga_barang.setText("5000000");
+break;
+case "Dispenser":
+harga_barang.setText("1000000");
+break;
+case "Kompor":
+harga_barang.setText("500000");
+break;
+
+2. Fungsi Tombol Hitung Jumlah Barang
+int jumlahMenu=Integer.parseInt(txtJumlahBeli.getText());
+int hargaMenu=Integer.parseInt(txtHargaMenu.getText());
+txtJumlahHarga.setText(Integer.toString(hargaMenu*jumlahMenu));
+
+3. Fungsi Tombol Bayar
+int JumlahBayar=Integer.parseInt(jumlah_bayar.getText());
+int JumlahHarga=Integer.parseInt(jumlah_harga.getText());
+if (JumlahBayar>=JumlahHarga){
+jumlah_kembalian.setText(Integer.toString(JumlahBayar-JumlahHarga));
+}
+else {
+jumlah_kembalian.setText("Uang Anda Kurang");
+}
+
+4. Fungsi Tombol Batal
+txtHargaMenu.setText("");
+txtJumlahBeli.setText("");
+txtJumlahHarga.setText("");
+txtJumlahBayar.setText("");
+txtJumlahKembalian.setText("");
+cmbMenuMakanan.setSelectedIndex(0);
+
+5. Fungsi Tombol Keluar
+System.exit(0);
+
+6. Mengaktifkan Run Otomatis
+new form_utama().show();

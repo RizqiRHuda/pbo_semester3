@@ -1,0 +1,12 @@
+Ayam 12000
+Bebek 17000
+Soto 15000
+Rawon 15000
+Kari Ayam 17000
+IKan Kakap 20000
+
+Kopi Susu 8000
+Soda Gembira 10000
+Es Teh 5000
+Teh Hangat 3000
+Es Campur 10000

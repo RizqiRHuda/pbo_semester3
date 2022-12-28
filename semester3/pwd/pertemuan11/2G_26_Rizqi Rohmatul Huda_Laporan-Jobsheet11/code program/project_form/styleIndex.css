@@ -1,0 +1,22 @@
+body {
+    background: #6F38C5;
+    background: -webkit-linear-gradient(to top, #87A2FB, #ADDDD0);
+    background: linear-gradient(to top, #87A2FB, #ADDDD0);
+}
+
+.container {
+    max-width: 550px;
+}
+
+.has-error label,
+.has-error input,
+.has-error textarea {
+    color: red;
+    border-color: red;
+}
+
+.list-unstyled li {
+    font-size: 13px;
+    padding: 4px 0 0;
+    color: red;
+}

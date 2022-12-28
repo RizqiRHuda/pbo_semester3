@@ -1,0 +1,181 @@
+ Dibawah ini adalah source code secara keseluruhan dari project diatas:
+JFrame pertama; Menu Makanan.
+– Source code untuk tampilan Message Box
+import javax.swing.JOptionPane;
+/**
+ *
+ * @author Asus
+ */
+public class Delivery extends javax.swing.JFrame {
+    /**
+     * Creates new form Delivery
+     */
+    public Delivery() {
+        initComponents();
+        JOptionPane.showMessageDialog(null, “Selamat Datang di Resto Doyan Ngunyah!” +
+                ” Silahkan Pilih Pesanan Anda. “);
+    }
+– Source code untuk button Proses Transaksi.
+    private void transaksiActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        int a1 = Integer.parseInt(oharga1.getText());
+        int b1 = Integer.parseInt(jmlps1.getText());
+        int t1 = a1*b1;
+        total1.setText(“”+t1);
+        int a2 = Integer.parseInt(oharga2.getText());
+        int b2 = Integer.parseInt(jmlps2.getText());
+        int t2 = a2*b2;
+        total2.setText(“”+t2);
+        int a3 = Integer.parseInt(oharga3.getText());
+        int b3 = Integer.parseInt(jmlps3.getText());
+        int t3 = a3*b3;
+        total3.setText(“”+t3);
+        int a4 = Integer.parseInt(oharga4.getText());
+        int b4 = Integer.parseInt(jmlps4.getText());
+        int t4 = a4*b4;
+        total4.setText(“”+t4);
+        int c1 = Integer.parseInt(total1.getText());
+        int c2 = Integer.parseInt(total2.getText());
+        int c3 = Integer.parseInt(total3.getText());
+        int c4 = Integer.parseInt(total4.getText());
+        int hasil = c1+c2+c3+c4;
+        totalbiaya.setText(“”+hasil);
+    }                          
+– Source code untuk button Order Baru.
+    private void orderbaruActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        // TODO add your handling code here:
+        onama1.setText(“”);
+        onama2.setText(“”);
+        onama3.setText(“”);
+        onama4.setText(“”);
+        oharga1.setText(“”);
+        oharga2.setText(“”);
+        oharga3.setText(“”);
+        oharga4.setText(“”);
+        jmlps1.setText(“”);
+        jmlps2.setText(“”);
+        jmlps3.setText(“”);
+        jmlps4.setText(“”);
+        total1.setText(“”);
+        total2.setText(“”);
+        total3.setText(“”);
+        total4.setText(“”);
+        totalbiaya.setText(“”);
+        bayar.setText(“”);
+        kembali.setText(“”);
+    }                                        
+– Source code untuk button Hitung.
+    private void hitungActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+        int a1 = Integer.parseInt(totalbiaya.getText());
+        int a2 = Integer.parseInt(bayar.getText());
+        int hasil = a2-a1;
+        kembali.setText(“”+hasil);
+    }                                      
+– Source code untuk button Paket Hemat 1, 2, 3, 4 dan 5.
+    private void menu1ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        onama1.setText(“Sate Ayam”);
+        oharga1.setText(“13000”);
+        onama2.setText(“Kue Cubit”);
+        oharga2.setText(“3000”);        
+        onama3.setText(“Es Jeruk”);
+        oharga3.setText(“4000”);
+        onama4.setText(“Es Doger”);
+        oharga4.setText(“5000”);
+    }                                     
+    private void menu2ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        onama1.setText(“Ayam Bakar”);
+        oharga1.setText(“15000”);
+        onama2.setText(“Kue Lupis”);
+        oharga2.setText(“3000”);        
+        onama3.setText(“Es Jeruk”);
+        oharga3.setText(“4000”);
+        onama4.setText(“Es Doger”);
+        oharga4.setText(“5000”);
+    }                                     
+    private void menu3ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        onama1.setText(“Steak”);
+        oharga1.setText(“20000”);
+        onama2.setText(“Kue Ape”);
+        oharga2.setText(“3000”);        
+        onama3.setText(“Es Jeruk”);
+        oharga3.setText(“4000”);
+        onama4.setText(“Es Doger”);
+        oharga4.setText(“5000”);
+    }                                     
+    private void menu4ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        onama1.setText(“Ikan Bakar”);
+        oharga1.setText(“13000”);
+        onama2.setText(“Kue Putu”);
+        oharga2.setText(“3000”);        
+        onama3.setText(“Es Jeruk”);
+        oharga3.setText(“4000”);
+        onama4.setText(“Es Doger”);
+        oharga4.setText(“5000”);
+    }                                     
+    private void menu5ActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        onama1.setText(“Kepiting Saus Tiram”);
+        oharga1.setText(“20000”);
+        onama2.setText(“Kue Cincin”);
+        oharga2.setText(“3000”);        
+        onama3.setText(“Es Jeruk”);
+        oharga3.setText(“4000”);
+        onama4.setText(“Es Doger”);
+        oharga4.setText(“5000”);
+    }                                    
+– Source code untuk button Batal.
+    private void batalActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+          if (JOptionPane.showConfirmDialog(null,
+        “Yakin nggak mau pesan makanannya?”, “Pintu Keluar”,
+        JOptionPane.YES_NO_OPTION)==
+        JOptionPane.YES_OPTION){
+         System.exit(0);
+         }
+    }                                    
+– Source code untuk button Order.
+    private void orderActionPerformed(java.awt.event.ActionEvent evt) {                                      
+        // TODO add your handling code here:
+        new DataPelanggan().setVisible(true);
+    }
+JFrame kedua; Data Pelanggan.
+– Source code untuk form Window.
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {                                     
+        // TODO add your handling code here:
+        tgl.addItem(“-“);
+        for (int a=1; a<=31; a++){
+            tgl.addItem(a);
+        }
+        
+        bln.addItem(“-“);
+        bln.addItem(“Januari”);
+        bln.addItem(“Februari”);
+        bln.addItem(“Maret”);
+        bln.addItem(“April”);
+        bln.addItem(“Mei”);
+        bln.addItem(“Juni”);
+        bln.addItem(“Juli”);
+        bln.addItem(“Agustus”);
+        bln.addItem(“September”);
+        bln.addItem(“Oktober”);  
+        bln.addItem(“November”);
+        bln.addItem(“Desember”);
+        
+        thn.addItem(“-“);
+        for (int b=2014; b<=2020; b++){
+        thn.addItem(b);        
+        }
+    }     
+– Source code untuk button Submit.
+Dibagian paling atas, tambahkan source code; import javax.swing.JOptionPane;
+    private void submitActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        // TODO add your handling code here:
+        JOptionPane.showMessageDialog(null, “Terima kasih atas pesanan Anda.”);
+        JOptionPane.showMessageDialog(null, “Paket makanan Anda akan segera kami antar.”);
+        System.exit(0);
+    }  

@@ -1,0 +1,4 @@
+composition, ada ownership tpi 
+misal gedung terdiri dari ruangan, maka hidupnya ruangan tergantung
+gedung, subclass sangat tergantung pada superclass
+

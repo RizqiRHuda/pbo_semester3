@@ -1,0 +1,8 @@
+ 68<!-- <li>
+                        <a href="#"><i class="fa fa-calendar fa-2x"></i> Laporan<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="?page=buku&aksi=cetak"></i> Laporan Buku</a></li>
+                            <li><a href="?page=anggota&aksi=cetak"></i> Laporan Anggota</a></li>
+                            <li><a href="?page=transaksi&aksi=cetak"></i> Laporan Transaksi</a></li>
+                        </ul>
+                     </li>
