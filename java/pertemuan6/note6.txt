@@ -1,0 +1,8 @@
+overloading terjadi pada class yg sama
+overriding terjadi pada subclass(turunan)
+
+misal class Dosen menurunkan class pegawai
+di class dosen ada method display sedang di pegawai jg ada
+method display maka akan terjadi overriding
+
+

@@ -1,0 +1,120 @@
+<mxfile host="65bd71144e" pages="5">
+    <diagram id="lxyDcdpr_1koaKKAIYC-" name="Halaman-4">
+        <mxGraphModel dx="974" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-2" value="Toko" style="swimlane;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="90" width="320" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-5" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- nama : String&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- alamat : String&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- contact : String&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- listAdmin&amp;nbsp; : ArrayList&amp;lt;Admin&amp;gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- listBarang : ArrayList&amp;lt;Barang&amp;gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="QgQGjKKSOe_pyrk-8hkg-2" vertex="1">
+                    <mxGeometry x="20" y="15" width="180" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-6" value="+ Toko(nama:String, alamat:String, contact String)&lt;br&gt;+ getNama() : String&lt;br&gt;+ setNama(nama:String) : void&lt;br&gt;+ getAlamat() : String&lt;br&gt;+ setAlamat(alamat:String) : void&lt;br&gt;+ getContact() : String&lt;br&gt;+ setContact(contact:String) : void&lt;br&gt;+ getInfoToko() : String&lt;br&gt;+ tambahBarang(barang:Barang) : void&lt;br&gt;+ tambahAdmin(admin:Admin) : void" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="QgQGjKKSOe_pyrk-8hkg-2" vertex="1">
+                    <mxGeometry x="20" y="150" width="280" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-3" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="QgQGjKKSOe_pyrk-8hkg-2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1" y="130" as="sourcePoint"/>
+                        <mxPoint x="321" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-7" value="Admin" style="swimlane;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="600" width="350" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-8" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- nama : String&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- id&lt;span style=&quot;white-space: pre;&quot;&gt;&#9;&lt;/span&gt;&amp;nbsp; &amp;nbsp; : int&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- contact : String&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;- alamat : String&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="QgQGjKKSOe_pyrk-8hkg-7" vertex="1">
+                    <mxGeometry x="-10" y="39" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="Gr1NEDXuuO1I0REMlq0d-1" value="+ Admin(nama:String, contact:String, id:int, alamat:String)&lt;br&gt;+ getNama() : String&lt;br&gt;+ setNama(nama:String) : void&lt;br&gt;+ getId() : int&lt;br&gt;+ setId(id:int) : void&lt;br&gt;+ getContact() : String&lt;br&gt;+ setContact(contact :String) : void&lt;br&gt;+ getAlamat() : String&lt;br&gt;+ setAlamat(alamat:String) : void&lt;br&gt;+ getDataAdmin() : String&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="QgQGjKKSOe_pyrk-8hkg-7" vertex="1">
+                    <mxGeometry x="20" y="120" width="330" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="5rfZ33ZyXwQ3LCm3FlNW-3" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="QgQGjKKSOe_pyrk-8hkg-7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="107" as="sourcePoint"/>
+                        <mxPoint x="350" y="107" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-11" value="Barang" style="swimlane;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="600" width="310" height="326" as="geometry"/>
+                </mxCell>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-12" value="&lt;div style=&quot;&quot;&gt;- nama : String&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- jenis : String&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- harga : int&lt;/div&gt;&lt;div style=&quot;&quot;&gt;- id : int&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="QgQGjKKSOe_pyrk-8hkg-11" vertex="1">
+                    <mxGeometry x="20" y="27" width="210" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="QgQGjKKSOe_pyrk-8hkg-13" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="QgQGjKKSOe_pyrk-8hkg-11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="140" as="sourcePoint"/>
+                        <mxPoint x="310" y="140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Gr1NEDXuuO1I0REMlq0d-2" value="+ Barang(nama:String, jenis:String, harga:int, id : int)&lt;br&gt;+ getNama() : String&lt;br&gt;+ setNama(nama:String) : void&lt;br&gt;+ getJenis() : String&lt;br&gt;+ setJenis(jenis:String) : void&lt;br&gt;+ getHarga() : int&lt;br&gt;+ setHarga(harga:int) : void&lt;br&gt;+ getId() : int&lt;br&gt;+ setId(id:int) : void&lt;br&gt;+ getInfoBarang() : String&lt;br&gt;&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="QgQGjKKSOe_pyrk-8hkg-11" vertex="1">
+                    <mxGeometry x="10" y="160" width="330" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="5rfZ33ZyXwQ3LCm3FlNW-6" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;exitX=0.552;exitY=0.001;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="QgQGjKKSOe_pyrk-8hkg-11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="920" y="590" as="sourcePoint"/>
+                        <mxPoint x="710" y="260" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="920" y="260"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5rfZ33ZyXwQ3LCm3FlNW-7" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;exitX=0.431;exitY=-0.006;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="QgQGjKKSOe_pyrk-8hkg-7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="240" y="590" as="sourcePoint"/>
+                        <mxPoint x="390" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="240" y="280"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+    <diagram id="TbzQ2M-RLqKaTOcrYIZs" name="Halaman-5">
+        <mxGraphModel dx="974" dy="422" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-1" value="Mesin" style="swimlane;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="120" width="540" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-2" value="&lt;div&gt;&lt;span&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ jenis : String&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ nama : String&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;# no_seri : int&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ power&amp;nbsp; : double&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px&quot;&gt;+ cc : int&lt;/font&gt;&lt;/div&gt;&lt;div&gt;# kecepatan : int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Rn4Gyd1HUiE2M3e-Hn0u-1" vertex="1">
+                    <mxGeometry x="20" y="40" width="170" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-3" value="&lt;font style=&quot;font-size: 12px&quot;&gt;+ Mesin( )&lt;br&gt;+ Mesin (jenis : String, nama : String, no_seri : int, power : double, cc : int, kecepatan : int)&lt;br&gt;+ getInfo () : String&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Rn4Gyd1HUiE2M3e-Hn0u-1" vertex="1">
+                    <mxGeometry x="10" y="140" width="510" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-4" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="Rn4Gyd1HUiE2M3e-Hn0u-1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="1" y="130" as="sourcePoint"/>
+                        <mxPoint x="540" y="130" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-5" value="Mesin2Silinder" style="swimlane;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="390" y="550" width="550" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-6" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+&amp;nbsp; gear : int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Rn4Gyd1HUiE2M3e-Hn0u-5" vertex="1">
+                    <mxGeometry x="10" y="30" width="200" height="25" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-7" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="Rn4Gyd1HUiE2M3e-Hn0u-5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="90" as="sourcePoint"/>
+                        <mxPoint x="550" y="90" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-12" value="&lt;font style=&quot;font-size: 12px&quot;&gt;+ Mesin2Silinder ( )&lt;br&gt;+ Mesin2Silinder (jenis : String, nama : String, no_seri : int, power : double, cc : int, gear:int, kecepatan : int)&lt;br&gt;+ getInfo () : String&lt;br&gt;+ getAllInfo () : String&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Rn4Gyd1HUiE2M3e-Hn0u-5" vertex="1">
+                    <mxGeometry x="2.5" y="100" width="537.5" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="Rn4Gyd1HUiE2M3e-Hn0u-13" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Single Inheritance&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=12;" parent="1" vertex="1">
+                    <mxGeometry x="485" y="20" width="350" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="I5bWBL84f3F2aHBMz7W5-2" value="" style="endArrow=classic;html=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="659" y="550" as="sourcePoint"/>
+                        <mxPoint x="659.23" y="340" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

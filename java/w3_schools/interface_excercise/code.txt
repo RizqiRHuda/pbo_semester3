@@ -1,0 +1,76 @@
+
+class Blender extends PeralatanMasak{
+    public int kecepatan;
+    public int gigi;
+
+    public Blender(int kecepatan, int gigi, String nama, String merk){
+        super(nama, merk);
+        this.gigi = gigi;
+    }
+
+    public void tampilMenggunakan(boolean isOn){
+        if(isOn == true){
+            System.out.println("Tombol bewarna merah");
+            System.out.println("Tekan tombol on");
+            System.out.println("Blender siap digunakan sesuai kebutuhan");
+        }
+        else{
+            System.out.println("Hubungkan stop kontak pada sumber listrik");
+        }
+    }
+
+    public void merubahKecepatan(int gigi){
+        int hasil = 0;
+        if (gigi == 1) {
+            hasil = 40;
+            if (kecepatan < hasil) {
+             
+                System.out.println(kecepatan + " : Gigi  1");
+
+            } else if (kecepatan > 40) {
+                System.out.println("Melebihi : " + hasil);
+            }
+        }
+        if (gigi == 2) {
+            hasil = 60;
+      
+            if (kecepatan < hasil) {
+                System.out.println(kecepatan + " : Gigi 2");
+            } else if (kecepatan > hasil ) {
+                System.out.println("Melebihi : " + hasil);
+            }
+        }
+
+        if (gigi == 3) {
+            hasil = 80;
+            if (kecepatan < hasil) {
+                System.out.println(kecepatan + " : Gigi 3");
+            } else if (kecepatan > hasil) {
+                System.out.println("Melebihi : " + hasil);
+            }
+        }
+
+    }
+    public String getInfo(){
+        String info = "";
+
+        info += super.getInfo();
+
+        return info;
+    }
+}
+//  int i=0;
+    //  int idx[] = a;
+
+    //  for( i = 0; i<arr.length; i++){
+    //     // arr[i] = a[i];
+    //     // if(arr[0] == a[0]){
+    //     //     //System.out.println(a[i]);
+    //     // }
+    //     // if(arr[1] == a[1]){
+
+    //     // }
+    //     // if(arr[2] == a[2]){
+
+    //     // }
+    //  }

@@ -1,0 +1,114 @@
+<mxfile host="65bd71144e">
+    <diagram id="3_mFhw2UeMNNF7ZftYho" name="Halaman-1">
+        <mxGraphModel dx="2194" dy="444" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-7" value="AlatOptik" style="swimlane;fontStyle=3" parent="1" vertex="1">
+                    <mxGeometry x="-729" y="80" width="254.5" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-8" value="&lt;div&gt;+ nama : String&lt;/div&gt;&lt;div&gt;+ fungsi : String&lt;/div&gt;&lt;div&gt;+ merk : String&lt;/div&gt;&lt;div&gt;+ warna : String&lt;/div&gt;&lt;div&gt;+ harga : int&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-7" vertex="1">
+                    <mxGeometry x="5" y="24" width="116" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-9" value="&lt;div&gt;&lt;i&gt;+ &lt;/i&gt;AlatOptik(nama : String, warna : String, merk : String, harga : int, fungsi : String)&lt;/div&gt;&lt;div&gt;&lt;i&gt;+ menggunakanAlat() : String&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i&gt;+ &lt;/i&gt;cetakInfo() : String&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-7" vertex="1">
+                    <mxGeometry y="110" width="286" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-10" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="wro6d9WmpXFXvkCrKfOe-7" target="wro6d9WmpXFXvkCrKfOe-7" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-518" y="410" as="sourcePoint"/>
+                        <mxPoint x="-468" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-11" value="Mikroskop" style="swimlane;fontStyle=1;startSize=23;" parent="1" vertex="1">
+                    <mxGeometry x="-1119" y="400" width="390" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-12" value="+ lensa : String&lt;br&gt;+ s : double&lt;br&gt;+ f : double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-11" vertex="1">
+                    <mxGeometry x="10" y="40" width="116" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-13" value="" style="endArrow=none;html=1;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-11" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="100" as="sourcePoint"/>
+                        <mxPoint x="390" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-14" value="&lt;div&gt;+ Mikroskop(lensa : String, s : double, f : double&lt;/div&gt;, nama : String, warna : String, merk : String, harga : int, fungsi : String)&lt;div&gt;&lt;span&gt;+ menggunakanAlat() : String&lt;/span&gt;&lt;/div&gt;&lt;div&gt;+ hitungPerbesaran(opsi : int,&amp;nbsp; sb : double) : void&lt;/div&gt;&lt;div&gt;+ cetakInfo() : String&lt;/div&gt;&lt;div&gt;&lt;div&gt;+ service() : void&lt;/div&gt;&lt;div&gt;+ repair(a:int) : void&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-11" vertex="1">
+                    <mxGeometry x="5" y="110" width="380" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-19" value="&lt;&lt;interface&gt;&gt;&#10;Serviceable" style="swimlane;startSize=40;" parent="1" vertex="1">
+                    <mxGeometry x="-1010" y="765" width="186" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-20" value="&lt;div style=&quot;text-align: left&quot;&gt;+ service() : void&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;+ repair(a:int) : void&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" parent="wro6d9WmpXFXvkCrKfOe-19" vertex="1">
+                    <mxGeometry x="10" y="60" width="166" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-21" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-1000" y="400" as="sourcePoint"/>
+                        <mxPoint x="-658" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-1000" y="320"/>
+                            <mxPoint x="-658" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-22" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-240" y="400" as="sourcePoint"/>
+                        <mxPoint x="-608" y="280" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-240" y="320"/>
+                            <mxPoint x="-608" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-24" value="Motor" style="swimlane;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="-470.5" y="710" width="354.5" height="290" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-25" value="" style="endArrow=none;html=1;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-24" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="140" as="sourcePoint"/>
+                        <mxPoint x="354.5" y="140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-27" value="+ jenis : String&lt;br&gt;+ no_seri : String&lt;br&gt;+ cc : int&lt;br&gt;+ warna : String&lt;br&gt;+ vMax : int&lt;br&gt;+ kecepatan : int&lt;br&gt;+ gear : int" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-24" vertex="1">
+                    <mxGeometry y="30" width="190" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-26" value="&lt;div&gt;+ Motor(jenis : String, cc : int, no_seri : String, warna : String, vMax : int)&lt;/div&gt;&lt;div&gt;+ Motor(kecepatan : int, gear : int)&lt;/div&gt;&lt;div&gt;+ getInfo() : String&lt;/div&gt;&lt;div&gt;+ tambahKecepatan(increment : int) : void&lt;/div&gt;&lt;div&gt;+ kurangiKecepatan(decrement : int) : void&lt;/div&gt;&lt;div&gt;&lt;div&gt;+ service() : void&lt;/div&gt;&lt;div&gt;+ repair(a:int) : void&lt;/div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-24" vertex="1">
+                    <mxGeometry x="4.5" y="158" width="350" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-28" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" parent="1" source="wro6d9WmpXFXvkCrKfOe-27" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-634" y="850" as="sourcePoint"/>
+                        <mxPoint x="-824" y="850" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-824" y="850"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-15" value="Softlens" style="swimlane;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="-430" y="400" width="390" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-16" value="+ diameter : double" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-15" vertex="1">
+                    <mxGeometry x="10" y="40" width="116" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-17" value="" style="endArrow=none;html=1;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-15" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint y="86" as="sourcePoint"/>
+                        <mxPoint x="390" y="86" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-18" value="&lt;div&gt;+ Softlens(diameter : double,&amp;nbsp;&lt;/div&gt;nama : String, warna : String, merk : String, harga : int, fungsi : String)&lt;div&gt;&lt;span&gt;+ menggunakanAlat() : String&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ cetakInfo() : String&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="wro6d9WmpXFXvkCrKfOe-15" vertex="1">
+                    <mxGeometry x="10" y="130" width="370" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="wro6d9WmpXFXvkCrKfOe-29" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" parent="1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-920" y="630" as="sourcePoint"/>
+                        <mxPoint x="-920" y="765" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-920" y="765"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

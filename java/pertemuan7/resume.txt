@@ -1,0 +1,16 @@
+1. inheritance
+2.polymorphism
+3.buat ohjek dan akses
+4.method overloading
+5.method overriding
+
+menambahkan kata kunci extends setelah deklarasi nama class
+
+Contoh diatas memberitahukan kompiler Java bahwa class B meng--‐extend class A. Artinya, class B
+adalah subclass dari class A dengan melakukan extension/perluasan.
+
+Suatu parent class bisa membatasi atribut dan method yang akan diwariskan kepada
+subclass--‐nya. Pembatasan tersebut dilakukan melalui penentuan access level modifier. 
+
+Atribut dan method yang akan diwariskan dari parent class ke child class adalah atribut dan 
+method dengan modifier protected atau public.

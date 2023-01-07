@@ -1,0 +1,138 @@
+ char opsi = 'y';
+        char gi2;
+        int g,v;
+
+        do {
+            System.out.print("Input gear ke - " );
+             g = sc.nextInt();
+             System.out.print("Input  kecepatan " );
+             v = sc.nextInt();
+            System.out.println(mesin2s.tambahKecepatan(g,v));
+            System.out.print("Apakah Anda ingin menambah kecepatan? ");
+            opsi = sc.next().charAt(0);
+        }while(opsi == 'y');
+        System.out.print("Apakah Anda ingin mengurangi gear ? ");
+        gi2 = sc.next().charAt(0);
+        if(gi2 == 'y'){
+            System.out.print("Input gear ke - ");
+            g = sc.nextInt();
+        }else{
+           
+        }
+
+        
+    public int tambahKecepatan(int gear, int kecepatan){
+        this.gear = gear;
+        int hasil = 0;
+        int temp;
+        int sum;
+        switch(gear){
+            case 1 : 
+            hasil = 30;
+            temp =kecepatan;
+            if(temp <= hasil){
+                return temp;
+            }
+            else{
+                return hasil;
+            }
+           // break;
+            case 2 :
+            hasil = 50;
+            temp = kecepatan;
+            sum = temp + 30;
+            if(temp <= hasil){
+                return temp;
+            }
+            else if(sum <= hasil ){
+                return sum;
+            }
+            else{
+                return hasil;
+            }
+           // break;
+            case 3 :
+            hasil = 75;
+            temp = kecepatan;
+            sum = temp + 50;
+            if(temp <= hasil){
+                return temp;
+            }
+             else if(sum <= hasil ){
+                return sum;
+            }
+            else{
+                return hasil;
+            }
+           // break;
+            case 4 :
+            hasil = 90;
+            temp =kecepatan;
+            sum = temp + 75;
+            if(temp <= hasil){
+                return temp;
+            }
+            else if(sum <= hasil ){
+                return sum;
+            }
+            else{
+                return hasil;
+            }
+           //break;
+            case 5 :
+            hasil = 95 + 60;
+            temp = hasil + kecepatan;
+            if(temp <= hasil){
+                return temp;
+            }
+            else{
+                return hasil;
+            }
+           // break;
+            default :
+            System.out.println("Gear MAX");
+            hasil = 155;
+        }
+
+        return hasil;
+    }
+
+    public int kurangiKecepatan(int gear){
+        int hasil = 0;
+        if(gear == 1 || gear == 2){
+            hasil = tambahKecepatan(gear, kecepatan)-20;
+        }
+        else if(gear == 3 || gear == 4){
+            hasil = tambahKecepatan(gear, kecepatan)-15;
+        }
+
+        return hasil;
+    }
+
+
+// info += "Jenis\t: " + this.jenis + " | " + "Nama\t: " + this.nama + " | " + 
+        // "No Seri\t: " + this.no_seri + " | " + "Tenaga mesin\t: " + this.power;
+    
+     // ability +=" | " + "Urutan gear\t: " + this.gear + " | " + "Kecepatan\t: "   + this.kecepatan + " | " + "Jumlah cc\t: " + this.cc;
+        // ability += "\n-----------------------------------------------------------------------------------------------------------------------------------------------\n";
+
+           //ketika gear bertambah secara berurutan ataupun tidak maka kecepatana akan menambahkan pada setiap gear sebelumnya
+
+
+              public int addGear(int gear, int kecepatan){
+        int hasil = 0;
+        int temp = kecepatan;
+        switch(gear)  {
+            case 1 :
+            hasil = 30;
+            if(temp <= 30){
+                return kecepatan;
+            }else{
+                return hasil;
+            }
+            
+
+
+        }
+        return hasil;
+    }

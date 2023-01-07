@@ -1,0 +1,18 @@
+
+10.	TUGAS
+1.	Tentukan sebuah class yang merupakan turunan dari 
+     class yang lain.
+2.	Buat 3 atribut pada parent class kemudian tambahkan minimal
+    1 atribut pada child class.
+3.	Lakukan method overloading dengan membuat 2 constructor yaitu 
+    constructor tanpa parameter dan constructor berparameter pada 
+    masing-masing class.Panggil constructor super() berparameter 
+    untuk membuat object dari parent class pada constructor child class.
+4.	Lakukan method overriding dengan membuat method dengan  nama dan
+     signature yang sama pada parent class dan child class.
+5.	Lakukan instansiasi objek child class pada main class kemudian 
+    print info nya.
+
+
+
+       
